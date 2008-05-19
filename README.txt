@@ -20,8 +20,6 @@ are not included in this release:
   * Java grammar
   * Ruby grammar
   * many of the good stuff from older Rockit versions (tree pattern matching, fully automated AST generation etc)
-  * GPL only on things related to generation, MIT/BSD on everything needed for
-      using the generated parsers etc (as much as possible)
 
 so *BE WARNED*... ;)
 
