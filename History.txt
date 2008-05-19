@@ -1,0 +1,4 @@
+== 0.8.6 / 2007-02-09
+
+* Converted to using hoe for Rakefile creation and management
+  * Released for early alpha testing.

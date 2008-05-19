@@ -1,0 +1,13 @@
+You can interpret MiniBasic programs by running 
+
+  ruby minibasic.rb program_filename
+
+Example 1.
+
+  $ ruby minibasic.rb mult3.basic
+  ...
+
+Example 2.
+
+  $ ruby minibasic.rb sumeven.basic
+  ...

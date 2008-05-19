@@ -1,0 +1,46 @@
+== TODO List
+
+=== Required
+
+
+=== Very Important
+* Simplify the grammar-in-ruby specing.
+  * Need not both rule and prod methods only rule.
+  * Specify grammars as subclasses to Grammar instead of in a block. This
+      makes constants live in the proper namespace and is cleaner and more
+      semantically closer to Ruby.
+
+* Finish the simple packrat memoization (always memoize on non-transient prod level)
+
+* Adaptive optimizations
+
+* Merge the Automated evolution of pretty-printers project
+
+* Implement EOS/EndOfText as a normal regexp /^\Z/  
+
+* Add error reporting
+
+=== Nice to Have
+* Simplify the grammar-in-ruby specing.
+  * Short hand "r" instead of "rule" like in old code
+
+* Simple optimizations:
+  * When map should be applied we do not need intermediate results so tell the
+      parsers "below" that so they need not extract lexemes. However, I think
+      it is better if this is handled by a general Optimization module before
+      code gen since we should not put lots of effort into optimizations
+      which have no bearing for the interpretive parsing alone. The IP is
+      only for def:ing semantics (and potentially for error analysis?).
+
+* Separate things out into different logical files depending on purpose.
+
+* While porting Java grammar:
+  * What happens if ast trees are only partially specified? Should it mix
+      sexprs with asts? Or should it create anonymous parse trees (ie the
+      class has no fixed name but there is a generic class on which you can 
+      specify the name)?
+
+=== Polish
+* Release the Ruby grammar/parser in its own separate gem for people only interested in that?
+
+=== Fluff
